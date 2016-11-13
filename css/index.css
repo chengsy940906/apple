@@ -1,0 +1,513 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+    box-sizing:border-box;
+    color:#aaa;
+    text-decoration: none;
+}
+.bg{
+    width:100%;
+    height:40px;
+    background:#444444;
+}
+.gg{
+    width:80%;
+    margin:0 auto;
+    height:40px;
+    line-height:40px;
+    color:#fff;
+    text-align:right;
+}
+.na{
+    width:100%;
+    height:44px;
+    background:#333;
+}
+.nav{
+    width:80%;
+    height:44px;
+    margin:0 auto;
+    display:none;
+}
+.nav li{
+    width:10%;
+    float:left;
+    color:#fff;
+    height:100%;
+    line-height:44px;
+}
+.nav li a{
+    display:block;
+    background-position:center center;
+    background-repeat:no-repeat;
+    height:100%;
+}
+.nav li:nth-child(1) a{
+    background-image:url(../img/image_large.svg);
+    background-position:left center;
+}
+.nav li:nth-last-child(2) a{
+    background-image:url(../img/suo.svg);
+    background-position:right center;
+}
+.nav li:nth-last-child(1) a{
+    background-image:url(../img/search.svg);
+    background-position:right center;
+    clear:both;
+}
+.na-s{
+    width:100%;
+    height:44px;
+    margin:0 auto;
+    display:block;
+}
+.na-s ul{
+    width:100%;
+    height:44px;
+    display:none;
+}
+.xiala{
+    position:absolute;
+    top:0;left:0;
+    width:auto;
+    height:100%;
+    background:rgba(0,0,0,1);
+    display:none;
+    z-index: 99999;
+}
+.xiala .ku{
+    width:auto;
+    height:auto;
+}
+.ku .guan:nth-child(1) a{
+     display: block;
+     width:10%;
+     height:50px;
+     background: url(../img/close.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     float: left;
+ }
+.ku .guan:nth-child(2) a{
+    display: block;
+    width:90%;
+    height:50px;
+    background: url(../img/image_large.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ku ul{
+    width:80%;
+    height:auto;
+}
+.xialal{
+    height:50px;
+    border-bottom:1px solid #777;
+    width:100%;
+    margin-left:60px;
+    line-height:50px;
+    font-size:20px;
+    color:#999;
+}
+.xialal:nth-last-child(1){
+    border-bottom:1px solid #fff;
+}
+.imgbox .img_1{
+    background:#fff url(../img/9-small.jpg) no-repeat;
+    background-size: contain;  background-position: center bottom;
+    z-index:1;
+}
+.imgbox .img_2 {
+    background: #000 url(../img/Z=.jpg) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+.imgbox .img_3{
+    background:#000 url(../img/2-small.jpg) no-repeat;
+    background-size:cover;  background-position:center center;
+}
+/*轮播*/
+.ban{
+    width:100%;height:480px;overflow:hidden;position: relative;
+}
+.imgbox{
+    position:relative;width:100%;height:100%;
+}
+.imgbox .list{
+    position:absolute;width:100%;height:100%;
+}
+.btns{
+    width:170px;height:5px;
+    position:absolute;left:0;right:0;bottom:50px;margin:auto;z-index:999;
+}
+.btns .btn-list{
+    float:left;width:50px;height:100%;
+    margin-right:5px;
+    border:1px solid #ccc;
+    border-radius:25%;
+    position: relative;
+}
+.btns .btn-list:nth-last-child(1){
+    margin:0;
+}
+.btn-list .progress{
+  height:100%;width:0%;
+    background:#ccc;
+}
+.left{
+    width:40px;height:40px;
+    background:#ccc;
+    position: absolute;top:0;bottom:0;
+    margin:auto;left:50px;
+    z-index:11;
+    border-radius:50%;
+    text-align: center;
+}
+.left .lbtn,.right .rbtn{
+    line-height:40px;
+    font-size: 20px;
+    color:#000;
+}
+.right{
+    width:40px;height:40px;
+    background:#ccc;
+    position: absolute;top:0;bottom:0;
+    margin:auto;right:50px;
+    z-index:11;
+    border-radius:50%;
+    text-align: center;
+}
+/*图片展示*/
+.img-list{
+    display:block;
+}
+.img-list div[class*=col]{
+    height:200px;
+    border:2px solid #fff;
+    background: url(../img/9_large.jpg) no-repeat;
+    background-size: cover;
+}
+.na-ss{
+    height:44px;
+    float:left;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.na-ss:nth-child(1){
+    width:10%;
+    background-image:url(../img/open.png);
+    background-position:20% center;
+}
+.na-ss:nth-child(2){
+    width:80%;
+    background-image:url(../img/image_large.svg);
+}
+.na-ss:nth-child(3){
+    width:10%;
+    background-image:url(../img/suo.svg);
+    background-position:center center;
+}
+.img-list div[class*=col]:nth-child(1){
+    height:200px;
+    border:2px solid #fff;
+    background: url(../img/9_large.jpg) no-repeat;
+    background-size:cover;
+}
+.img-list div[class*=col]:nth-child(2){
+    height:200px;
+    border:2px solid #fff;
+    background: url(../img/ipad_l.jpg) no-repeat;
+    background-size:cover;
+}
+.img-list div[class*=col]:nth-child(3){
+    height:200px;
+    border:2px solid #fff;
+    background: url(../img/air_l.jpg) no-repeat;
+    background-size:cover;
+}
+.img-list div[class*=col]:nth-child(4){
+    height:200px;
+    border:2px solid #fff;
+    background: url(../img/iphone_l.jpg) no-repeat;
+    background-size:cover;
+}
+/*页面尾部*/
+.wenzi{
+    width:100%;
+    height:100%;
+    display:block;
+}
+.wz_top{
+    width:90%;
+    height:50px;
+    color:#aaa;
+    font-size:10px;
+    margin:0 auto;
+    border-bottom:1px solid #ccc;
+    line-height:50px;
+}
+.wenzi .xiao_wenzi{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+    color:#aaa;
+    padding:20px 0;
+    display:block;
+}
+.wenzi .xiao_wenzi li{
+    width:100%;
+    border-bottom:1px solid #ccc;
+}
+.wenzi-list>div{
+    padding:0;
+    width:100%;
+    overflow:hidden;
+    color:#aaa;
+}
+.wenzi-list .wz_s .wz-ss{
+    width:100%;
+    display:block;
+    color:#aaa;
+    line-height:40px;
+}
+.wenzi-list .wz_s .wz-ss span{
+    color:#aaa;
+    line-height:40px;
+    float:right;
+    margin-right:10px;
+}
+.wenzi-list .wz_s .wz-ss-son{
+    display:none;
+}
+.wenzi-list .wz_s .wz-ss-son .wz_small{
+    height:30px;
+}
+.da_wenzi{
+    display:none;
+}
+/*低*/
+.more{
+    width:90%;
+    height:30px;
+    font-size:10px;
+    line-height:20px;
+    color:#aaa;
+    margin:0 auto;
+    display:block;
+}
+.more span{
+    color:dodgerblue;
+}
+/*.foot{
+    width:90%;
+    height:30px;
+    margin:0 auto;
+}*/
+.co{
+    font-size:10px;
+    line-height:30px;
+    color:#aaa;
+    height:30px;
+    width:90%;
+    margin:0 auto;
+    padding:0;
+}
+.china{
+    color:#aaa;
+    width:90%;
+    margin:0 auto;
+    font-size:10px;
+}
+.china span{
+    width:16px;height:16px;
+    float: left;margin-right:5px;
+    background:url(../img/ch.png);
+}
+.lian{
+    width:90%;
+    margin:0 auto;
+    height:25px;
+}
+.lian li{
+    width:12%;
+    float:left;
+    border-right:1px solid #ccc;
+    text-align: center;
+}
+.lian li:nth-child(1){
+   text-align: left;
+}
+.lian li:nth-last-child(1){
+    border:0;
+}
+
+.lian li a {
+    color: #999;
+    font-size: 10px;
+}
+.large-di{
+    display:block;
+}
+.zhu{
+    width:90%;margin:0 auto;
+    height:30px;
+    color:#ccc;
+    font-size: 10px;display:block;
+}
+@media screen and (min-width:750px){
+    .nav{
+        display:block;
+    }
+    .na-s{
+        display:none;
+    }
+    .imgbox .img_1{
+        background:#fff url(../img/9-middle.jpg) no-repeat;
+        background-size: contain;  background-position:center bottom;
+        z-index:1;
+    }
+    .imgbox .img_2 {
+        background: #000 url(../img/Z=.jpg) no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    .imgbox .img_3{
+        background:#000 url(../img/2-middle.jpg) no-repeat;
+        background-size:cover;  background-position:center center;
+    }
+    .img-list div[class*=col]:nth-child(1){
+        height:200px;
+        border:2px solid #fff;
+        background: url(../img/9_middle.jpg) no-repeat;
+        background-size:cover;
+    }
+    .img-list div[class*=col]:nth-child(2){
+        height:200px;
+        border:2px solid #fff;
+        background: url(../img/ipad_m.jpg) no-repeat;
+        background-size:cover;
+    }
+    .img-list div[class*=col]:nth-child(3){
+        height:200px;
+        border:2px solid #fff;
+        background: url(../img/air_m.jpg) no-repeat;
+        background-size:cover;
+    }
+    .img-list div[class*=col]:nth-child(4){
+        height:200px;
+        border:2px solid #fff;
+        background: url(../img/iphone_m.jpg) no-repeat;
+        background-size:cover;
+    }
+    .wenzi .xiao_wenzi{
+        display:none;
+    }
+    .da_wenzi{
+        padding:20px 0;
+        width:90%;
+        height:auto;
+        margin:0 auto;
+        display:block;
+        overflow:hidden;
+    }
+    .da_wenzi li{
+       width:20%;
+        float:left;
+    }
+    .da_wenzi li p{
+        font-size: 10px;
+        font-weight:bold;
+        padding:20px 0 0;
+    }
+    .da_wenzi li div{
+        font-size: 10px;
+        line-height:20px;
+        heiht:20px;
+    }
+    .more{
+        border-bottom:1px solid #aaa;
+    }
+    .large-di{
+        width:90%;margin:0 auto;
+    }
+    .co{
+        float:left;
+        width:auto;
+        margin-right: 20px;
+    }
+    .china{
+        float:right;
+        width:auto;
+    }
+    .lian{
+        width:60%;
+        margin:10px auto;
+        height:25px;
+    }
+    .lian li{
+        width:12%;
+        float:left;
+        border-right:1px solid #ccc;
+        text-align: center;
+    }
+    .lian li:nth-child(1){
+        text-align: left;
+    }
+    .lian li:nth-last-child(1){
+        border:0;
+    }
+
+    .lian li a {
+        color: #999;
+        font-size: 10px;
+    }
+    .zhu{
+        width:90%;margin:0 auto;
+        height:30px;
+        color:#ccc;
+        font-size: 10px;
+    }
+
+}
+@media screen and (min-width:1075px) {
+    .imgbox .img_1{
+        background:#fff url(../img/9-large.jpg) no-repeat;
+        background-size:cover;  background-position: bottom center;
+
+    }
+    .imgbox .img_2 {
+        background: #000 url(../img/Z=.jpg) no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    .imgbox .img_3{
+        background:#000 url(../img/2-large.jpg) no-repeat;
+        background-size:cover;  background-position:center center;
+    }
+    .img-list div[class*=col]:nth-child(1){
+        height:200px;
+        border:2px solid #fff;
+        background: url(../img/9_small.jpg) no-repeat;
+        background-size:cover;
+    }
+    .img-list div[class*=col]:nth-child(2){
+        height:200px;
+        border:2px solid #fff;
+        background: url(../img/ipad_s.jpg) no-repeat;
+        background-size:cover;
+    }
+    .img-list div[class*=col]:nth-child(3){
+        height:200px;
+        border:2px solid #fff;
+        background: url(../img/air_s.jpg) no-repeat;
+        background-size:cover;
+    }
+    .img-list div[class*=col]:nth-child(4){
+        height:200px;
+        border:2px solid #fff;
+        background: url(../img/iphone_s.jpg) no-repeat;
+        background-size:cover;
+    }
+}
